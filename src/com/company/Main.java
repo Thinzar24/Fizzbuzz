@@ -17,18 +17,21 @@ public class Main {
 
     public static void fizzbuzz() {
 
-        startnum = 1 + r.nextInt(101);
-        endnum = 1 + r.nextInt(101);
+        startnum = 1 + r.nextInt(100);
+        endnum = 1 + r.nextInt(100);
+        System.out.println(startnum);
+        System.out.println(endnum);
+        if(startnum == endnum) {
+            System.out.println("Shazam!");
+        }
 
         for (int i = startnum; i < endnum; i++) { // for loop to print 1 -100
 
-            if(startnum == endnum) {
-                System.out.println("Shazam!");
-            }else if (i % 3 == 0 && i % 5 == 0) { // 3 and 5 have 0 modulo print fizzbuzz
+            if (i % 3 == 0 && i % 5 == 0) { // 3 and 5 have 0 modulo print fizzbuzz
                     System.out.println("FizzBuzz");
             } else if (i % 3 == 0) { // 3 had 0 modulo print fizz
                 System.out.println("Fizz");
-            } else if (i % 5 == 00) { // 5 had 0 modulo print buzz
+            } else if (i % 5 == 0) { // 5 had 0 modulo print buzz
                 System.out.println("Buzz");
             } else {
                 System.out.println(i);
